@@ -1,0 +1,190 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+  --main-background-color: #ffffff;
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --nav-link-color: #000000;
+  --footer-background-color: #2f303a;
+  --btn-hover-color: #188ce8;
+  --adress-link-color: rgba(255, 255, 255, 0.6);
+  --aboutus-background-color: #f5f4fa;
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.portfolio,
+.studio {
+  color: var(--accent-color);
+}
+/* ============= COMPONENTS ============= */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* ============= HEADER ============= */
+.head {
+  background-color: var(--main-background-color);
+}
+.head-nav-logo-link {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--nav-link-color);
+}
+.logo-left {
+  color: var(--accent-color);
+}
+.head-menu-link,
+.head-contact-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.head-menu-link:hover,
+.head-menu-link:focus,
+.head-contact-link:hover,
+.head-contact-link:focus {
+  color: var(--accent-color);
+}
+/* ============= HERO ============= */
+.hero {
+  background-color: var(--footer-background-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+}
+
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-background-color);
+  background: var(--accent-color);
+  cursor: pointer;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--btn-hover-color);
+}
+/* ============= WHY US ============= */
+.whyus-title {
+  color: var(--main-background-color);
+}
+.whyus-menu-item-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.whyus-menu-item-description {
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
+/* ============= WHAT WE DO ============= */
+
+/* =============ABOUT US ============= */
+.aboutus {
+  background-color: var(--aboutus-background-color);
+}
+.aboutus-menu-item {
+  background-color: var(--main-background-color);
+}
+.aboutus-menu-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.aboutus-menu-description {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+/* =============FOOTER ============= */
+.footer {
+  background-color: var(--footer-background-color);
+}
+.footer-logo-link {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--main-background-color);
+}
+.adress-menu-link-adress {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--main-background-color);
+}
+.adress-menu-link {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--adress-link-color);
+}
+.adress-menu-link-adress:hover,
+.adress-menu-link-adress:focus,
+.adress-menu-link:hover,
+.adress-menu-link:focus {
+  color: var(--accent-color);
+}
+/* ============= HERO PORTFOLIO============= */
+.hero-portfolio-title {
+  color: var(--main-background-color);
+}
+.modal-btn-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--main-text-color);
+  background-color: var(--aboutus-background-color);
+  cursor: pointer;
+}
+.modal-btn-portfolio:hover,
+.modal-btn-portfolio:focus {
+  background: var(--accent-color);
+  color: var(--main-background-color);
+}
+/* ============= WORK EXAMPLES============= */
+.example-title-portfolio {
+  color: var(--main-background-color);
+}
+.example-menu-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.example-menu-description {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-text-color);
+}
