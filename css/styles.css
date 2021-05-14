@@ -11,6 +11,28 @@
   --adress-link-color: rgba(255, 255, 255, 0.6);
   --aboutus-background-color: #f5f4fa;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
 .list {
   list-style: none;
 }
@@ -20,12 +42,27 @@
   color: var(--main-text-color);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 body {
   font-family: var(--main-font);
   background-color: var(--main-background-color);
   color: var(--main-text-color);
   font-size: 14px;
   letter-spacing: 0.03em;
+  width: 1600px;
+  margin: 0 auto;
+
 }
 .portfolio,
 .studio {
@@ -33,16 +70,28 @@ body {
 }
 /* ============= COMPONENTS ============= */
 .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 /* ============= HEADER ============= */
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .head {
+  padding-top: 24px;
+  padding-bottom: 25px;
   background-color: var(--main-background-color);
 }
+.head-nav {
+  display: flex;
+  align-items: center;
+}
 .head-nav-logo-link {
+  margin-right: 93px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -51,6 +100,22 @@ body {
 }
 .logo-left {
   color: var(--accent-color);
+}
+.head-menu-list {
+  display: flex;
+  align-items: center;
+}
+.head-menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+.head-menu-contact-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.mail {
+  margin-left: auto;
+  margin-right: 50px;
 }
 .head-menu-link,
 .head-contact-link {
@@ -69,6 +134,8 @@ body {
   background-color: var(--footer-background-color);
 }
 .hero-title {
+  padding-top: 200px;
+  padding-bottom: 40px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -89,16 +156,28 @@ body {
   color: var(--main-background-color);
   background: var(--accent-color);
   cursor: pointer;
+  padding-bottom: 200px;
+  
 }
 .modal-btn:hover,
 .modal-btn:focus {
   background: var(--btn-hover-color);
 }
 /* ============= WHY US ============= */
+.whyus {
+  padding-bottom: 0;
+}
 .whyus-title {
   color: var(--main-background-color);
 }
+.whyus-menu-list {
+  display: flex;
+}
+.whyus-menu-item {
+  margin-left: 30px;
+}
 .whyus-menu-item-title {
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -108,15 +187,39 @@ body {
   color: var(--secondary-text-color);
 }
 /* ============= WHAT WE DO ============= */
-
+.whatwedo-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.whatwedo-menu-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+}
 /* =============ABOUT US ============= */
-.aboutus {
+.about {
   background-color: var(--aboutus-background-color);
+}
+.aboutus-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .aboutus-menu-item {
   background-color: var(--main-background-color);
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.aboutus-menu-img {
+  margin-bottom: 30px;
 }
 .aboutus-menu-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -128,9 +231,13 @@ body {
   text-align: center;
   color: var(--secondary-text-color);
 }
+
 /* =============FOOTER ============= */
 .footer {
-  background-color: var(--footer-background-color);
+background-color: var(--footer-background-color);
+}
+.footer-container {
+  padding-top: 60px;
 }
 .footer-logo-link {
   font-family: var(--secondary-font);
@@ -138,6 +245,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--main-background-color);
+  
 }
 .adress-menu-link-adress {
   font-style: normal;
@@ -159,6 +267,13 @@ body {
 .hero-portfolio-title {
   color: var(--main-background-color);
 }
+.hero-portfolio-menu-list {
+  display: flex;
+  margin-bottom: 50px;
+}
+.hero-portfolio-menu-item {
+  margin-right: 8px;
+}
 .modal-btn-portfolio {
   font-weight: 500;
   font-size: 16px;
@@ -176,6 +291,17 @@ body {
 /* ============= WORK EXAMPLES============= */
 .example-title-portfolio {
   color: var(--main-background-color);
+}
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.example-menu-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .example-menu-title {
   font-weight: 700;
