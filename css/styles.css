@@ -166,6 +166,7 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
   margin-bottom: 200px;
+  border: 1px;
   
 }
 .modal-btn:hover,
@@ -209,9 +210,8 @@ body {
 }
 }
 /* =============ABOUT US ============= */
-.aboutus {
+.about {
   background-color: var(--aboutus-background-color);
- 
 }
 .aboutus-menu {
   display: flex;
@@ -219,9 +219,12 @@ body {
   align-items: stretch;
   margin-left: -30px;
   margin-top: -30px;
+  margin-bottom: 0px;
 }
 .aboutus-menu-item {
   background-color: var(--main-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
@@ -306,8 +309,9 @@ background-color: var(--footer-background-color);
   background-color: var(--aboutus-background-color);
   cursor: pointer;
   border-radius: 4px;
-  border-color: var(--main-background-color);
+  border: 1px solid:var(--main-background-color) ;
   padding: 6px 22px;
+  box-sizing: border-box;
   
 }
 .modal-btn-portfolio:hover,
