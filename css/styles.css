@@ -132,31 +132,40 @@ body {
 /* ============= HERO ============= */
 .hero {
   background-color: var(--footer-background-color);
+}  
+
+.hero-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
 }
 .hero-title {
   padding-top: 200px;
-  padding-bottom: 40px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
   text-align: center;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-background-color);
 }
 
 .modal-btn {
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-background-color);
   background: var(--accent-color);
   cursor: pointer;
-  padding-bottom: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-bottom: 200px;
   
 }
 .modal-btn:hover,
@@ -200,12 +209,14 @@ body {
 }
 }
 /* =============ABOUT US ============= */
-.about {
+.aboutus {
   background-color: var(--aboutus-background-color);
+ 
 }
 .aboutus-menu {
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -238,6 +249,7 @@ background-color: var(--footer-background-color);
 }
 .footer-container {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo-link {
   font-family: var(--secondary-font);
@@ -245,7 +257,17 @@ background-color: var(--footer-background-color);
   font-size: 26px;
   line-height: 1.19;
   color: var(--main-background-color);
+}
+.logo-container {
+  margin-bottom: 20px;
+}
+.adress-menu {
+  display: flex;
+  flex-direction: column;
   
+}
+.adress-menu-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .adress-menu-link-adress {
   font-style: normal;
@@ -270,18 +292,23 @@ background-color: var(--footer-background-color);
 .hero-portfolio-menu-list {
   display: flex;
   margin-bottom: 50px;
+  justify-content: center;
 }
 .hero-portfolio-menu-item {
   margin-right: 8px;
 }
 .modal-btn-portfolio {
+  height: 38px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   color: var(--main-text-color);
   background-color: var(--aboutus-background-color);
   cursor: pointer;
+  border-radius: 4px;
+  border-color: var(--main-background-color);
+  padding: 6px 22px;
+  
 }
 .modal-btn-portfolio:hover,
 .modal-btn-portfolio:focus {
