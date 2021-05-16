@@ -233,20 +233,15 @@ body {
   margin-left: 30px;
   margin-top: 30px;
 }
-.aboutus-menu-img {
-  margin-bottom: 30px;
-}
 .aboutus-menu-title-div {
-  margin-bottom: 10px;
+  padding: 30px;
 }
 .aboutus-menu-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-.aboutus-menu-description-div {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .aboutus-menu-description {
   font-size: 16px;
@@ -340,6 +335,7 @@ background-color: var(--footer-background-color);
   margin-top: -30px; 
 }
 .border-example-menu {
+  padding: 24px 20px;
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
 }
@@ -348,22 +344,13 @@ background-color: var(--footer-background-color);
   margin-left: 30px;
   margin-top: 30px; 
 }
-.example-menu-title-div {
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-bottom: 4px;
-}
 .example-menu-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-}
-.example-menu-description-div {
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
+
 }
 .example-menu-description {
   font-size: 16px;
