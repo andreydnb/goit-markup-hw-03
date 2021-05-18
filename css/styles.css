@@ -68,6 +68,21 @@ body {
 .studio {
   color: var(--accent-color);
 }
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* ============= COMPONENTS ============= */
 .section-title {
   margin-bottom: 50px;
@@ -179,9 +194,6 @@ body {
 .whyus {
   padding-bottom: 0;
 }
-.whyus-title {
-  visibility: hidden;
-}
 .whyus-menu-list {
   display: flex;  
 }
@@ -292,9 +304,7 @@ background-color: var(--footer-background-color);
   color: var(--accent-color);
 }
 /* ============= HERO PORTFOLIO============= */
-.hero-portfolio-title {
-  visibility: hidden;
-}
+
 .hero-portfolio-menu-list {
   display: flex;
   margin-bottom: 50px;
@@ -323,10 +333,7 @@ background-color: var(--footer-background-color);
   color: var(--main-background-color);
 }
 /* ============= WORK EXAMPLES============= */
-.example-title-portfolio {
-  visibility: hidden;
-  margin-left: 0;
-}
+
 .example-list {
   display: flex;
   flex-wrap: wrap;
